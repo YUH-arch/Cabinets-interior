@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    
+    <nav class="navbar" style="background-color:#6E3B3D"> 
+        <a class="navbar-brand nav-fill d-none d-lg-inline" href="index.html">
+        <img src="Images/C&I_Logo.svg" style="color:#FF8080;" width="150" height="150" class="d-inline align-left"> Cabinets & Interior</a>
+
+        <div class="navmenu w-100 d-lg-none">
+            <div class="d-flex justify-content-between">
+            <a class="navbar-brand nav-fill" href="index.html"><img src="Images/C&I_Logo.svg" style="color:#FF8080;" width="150" height="150" class="d-inline align-left"></a>
+            
+            <button class="navbar-toggler ham" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <img src="Images/Hamburger_Icon.svg" width="60px" alt="">
+            </button> 
+            </div>  
+
+            <div>
+                <a class="navbar-brand nav-fill" href="index.html">Cabinets & Interior</a>
+            </div>
+
+
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a id="mobile_home" class="navbar-brand nav-fill" href="index.html">
+                    <img src="Images/C&I_Logo.svg" style="color:#FF8080;" width="150" height="150" class="d-inline align-left">
+                </a>
+                <button id="mobile_exit" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <img src="Images/Navbar_X.svg" width="50px" alt="">
+                </button>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mobile" href="about_us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile" href="cabinet.html">Cabinets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile" href="window.html">Windows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile selected" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <ul class="nav justify-content-end d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cabinet.html">Cabinets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="window.html">Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link selected" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    
+
+    </nav>
+
+
+
+    
+
+    <div class="row" style="background-color:#4b4444">
+
+      <!-- Before and After section -->
+
+      <main>
+        <h1 class="text-center">Before and After</h1>
+        <p class="subtitle">See what we did for one of clients!</p>
+        <hr>
+
+        <div class="slider-container">
+          <div class="image-container">
+
+            <img class="image-before slider-image" src="Images/Cabinets_before.png" alt="color photo"/>
+
+            <img class="image-after slider-image" src="Images/Cabinets_after.png" alt="black and white" />
+          </div>
+          <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider" />
+
+          <div class="slider-line" aria-hidden="true"></div>
+          
+
+          <div class="slider-button" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none"></rect>
+              <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+              <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+              <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+              <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+              <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+            </svg>
+          </div>
+
+
+        </div>
+        <p class="subtitle">We made new cabinets and then refinished them into a clean white!</p>
+
+      </main>
+
+    </div>
+      
+    <div class="row gal">
+
+      <div class="container">
+        <div class="col">
+          <h1 class="text-center">Gallery</h1>
+          <p class="text-center">Here is more of our past work with clients!</p>
+          <p class="text-center">Like something you want? Let us know!</p>
+          <a class="btn link gallery" style="background-color: #FF8080; color: #fff;" href="contact.html">Contact</a>
+
+        <hr>
+          <p class="text-center d-lg-none gal_info">Click on a category to see some of the best work we’ve done!</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row gal">
+      <!-- LARGE Gallery -->
+      
+        <div class="col- gal d-none d-lg-flex">
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                  <a class="nav-link gal bright active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Cabinets</a>
+
+                  <a class="nav-link gal" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Shutters</a>
+
+                  <a class="nav-link gal bright" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Blinds</a>
+
+                  <p>Click on a category to see some of the best work we’ve done!</p>
+                </div>
+
+                <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                          <div class="image_info">
+                            <img src="Images/Refinished Cabinet 1.avif">
+                            <div></div>
+                            <p>Refinished White Cabinets &amp; Shelves</p>
+                          </div>
+                          <div class="image_info">
+                            <img src="Images/Refinished Cabinet 2.png">
+                            <div></div>
+                            <p>Refinished White Cabinets &amp; Shelves</p>
+                          </div>
+                          <div class="image_info">
+                            <img src="Images/Refinished Cabinet 3.png">
+                            <div></div>
+                            <p>Refinished White Cabinets &amp; Shelves</p>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade shutter" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                          <div class="image_info">
+                            <img src="Images/Shutter 1.png">
+                            <div></div>
+                            <p>Slider Shutters</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img src="Images/Shutter 2.png">
+                            <div></div>
+                            <p>Custom Plantation Shutter &amp; Fantop Shutter</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img src="Images/Shutter 3.png">
+                            <div></div>
+                            <p>Plantation Shutters</p>
+                          </div>
+                            
+                        </div>
+
+                        <div class="tab-pane fade blind" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                          <div class="image_info">
+                            <img src="Images/Blinds 1.png">
+                            <div></div>
+                            <p>Alumninium Venetian Blind</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img src="Images/Blinds 2.png">
+                            <div></div>
+                            <p>Faux Wooden Venetian Blind</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img src="Images/Blinds 3.jpg">
+                            <div></div>
+                            <p>Wooden Venetien Blind</p>
+                          </div>
+                            
+                        </div>
+                </div>
+        </div>
+
+        <!-- SMALL GALLERY -->
+
+        <div class="col small-gal d-lg-none">
+
+            <div id="accordion">
+                  <div class="card bright">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cabinets</button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+
+                        <div class="image_info">
+                          <img class="img-fluid" src="Images/Refinished Cabinet 1.avif" alt="">
+                          <div></div>
+                          <p>Refinished White Cabinets &amp; Shelves</p>
+                        </div>
+
+                        <div class="image_info">
+                          <img class="img-fluid" src="Images/Refinished Cabinet 2.png" alt="">
+                          <div></div>
+                          <p>Refinished White Cabinets &amp; Shelves</p>
+                        </div>
+
+                        <div class="image_info">
+                          <img class="img-fluid" src="Images/Refinished Cabinet 3.png" alt="">
+                          <div></div>
+                          <p>Refinished White Cabinets &amp; Shelves</p>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Shutters</button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+
+                        <div class="image_info">
+                            <img class="img-fluid" src="Images/Shutter 1.png" height="500px" width="350px">
+                            <div></div>
+                            <p>Slider Shutters</p>
+                        </div>
+
+                          <div class="image_info">
+                            <img class="img-fluid" src="Images/Shutter 2.png" height="500px" width="350px">
+                            <div></div>
+                            <p>Custom Plantation Shutter &amp; Fantop Shutter</p>
+                        </div>
+
+                        <div class="image_info">
+                            <img class="img-fluid" src="Images/Shutter 3.png" height="500px" width="700px">
+                            <div></div>
+                            <p>Plantation Shutters</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="card bright">
+
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Blinds</button>
+                      </h5>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+
+                          <div class="image_info">
+                            <img class="img-fluid" src="Images/Blinds 1.png">
+                            <div></div>
+                            <p>Alumninium Venetian Blind</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img class="img-fluid" src="Images/Blinds 2.png">
+                            <div></div>
+                            <p>Faux Wooden Venetian Blind</p>
+                          </div>
+
+                          <div class="image_info">
+                            <img class="img-fluid" src="Images/Blinds 3.jpg" alt="">
+                            <div></div>
+                            <p>Wooden Venetien Blind</p>
+                          </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+            </div>
+
+        </div>
+    </div>
+                     
+    <footer class="pt-4" style="background-color: #707070;"> 
+
+        <ul class="nav justify-content-around doormat_footer">
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cabinet.html">Cabinets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="window.html">Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+
+        <div class="container">
+
+            <div class="row footer">
+
+                <div class="col-6 col-md text-left text-white">
+                    <h4>Contact Us:</h4>
+                    <p>Phone Number: 1-702-839-8293</p>
+                    <p>Email:  <a class="email_hyperlink" href="mailto:shibunsasl@gmail.com">shibunsasl@gmail.com</a></p>
+                </div>
+
+                <div class="col-6 col-md text-right text-white">
+                    <h4>Socials:</h4>
+                    <img src="Images/social-media-icon-set-6994936-02.svg" class="d-block" height="100px" width="100px">
+                </div>
+
+            </div>
+
+            
+        </div>
+    </footer>  
+
+    <div class="col-md d-block copyright" style="background-color: #3E3434 ">
+        <p class="text-center">Copyright 2025-2026 | Privacy Policy </p>
+    </div>
+
+</body>
+</html>
