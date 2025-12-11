@@ -245,6 +245,7 @@ rect{
 
 .col-md-12.col-lg-7.no-gutters.full_img{
     padding: 0;
+    position: relative;
 }
 
 .row.img_text{
@@ -252,7 +253,7 @@ rect{
 }
 
 .col-lg-5.img_txt{
-    padding: 50px 0px;
+    padding: 50px 40px 0 0px;
     padding-left: 100px;
     padding-right: 50px;
 }
@@ -273,6 +274,14 @@ rect{
 
 .txt.img_text{
     padding-right: 150px;
+}
+
+.txt_on_img{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: #b15b5b;
+    padding: 10px;
 }
 
 /* Contact */
@@ -678,6 +687,10 @@ footer .col-md{
 
     .text.question{
         width: 100%;
+    }
+
+    .col-lg-5.img_txt{
+        padding-left: 60px;
     }
    
 }
